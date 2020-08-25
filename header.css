@@ -1,0 +1,84 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top:0px;
+    border-bottom: 1px solid grey;
+}
+
+.headerIn {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navBar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navMenu:hover .subMenu1 {
+    opacity: 1;
+    visibility: visible;
+}
+.navMenu:hover .subMenu2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.subMenu1 {
+    position: absolute;
+    margin: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+}
+.subMenu2 {
+    position: absolute;
+    margin: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.main {
+    position: relative;
+    top: 60px;
+}
+
+.Home {
+    margin-top: 40px;
+    text-align: center;
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mainText{
+    font-size: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mainTextMeaning{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.aboutWho_{
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: grey;
+    opacity: 0.8;
+}
