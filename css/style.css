@@ -1,0 +1,12 @@
+@import "../css/header.css";
+@import "../css/hackathon.css";
+@import "../css/footer.css";
+@import "../css/contact.css";
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color : black;
+}
