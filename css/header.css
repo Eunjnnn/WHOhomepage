@@ -1,7 +1,7 @@
 .header {
     width: 100%;
-    position: relative;
-    top:0px;
+    position: fixed;
+    background-color: white;
     border-bottom: 1px solid grey;
 }
 
@@ -49,36 +49,4 @@
     justify-content: space-between;
     opacity: 0;
     visibility: hidden;
-}
-
-
-.main {
-    position: relative;
-    top: 60px;
-}
-
-.Home {
-    margin-top: 40px;
-    text-align: center;
-    width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.mainText{
-    font-size: 120px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.mainTextMeaning{
-    font-size: 50px;
-    padding-bottom: 20px;
-}
-
-.aboutWho_{
-    font-size: 20px;
-    padding-bottom: 10px;
-    color: grey;
-    opacity: 0.8;
 }

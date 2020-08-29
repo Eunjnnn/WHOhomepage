@@ -1,0 +1,43 @@
+.organizer {
+    padding-top: 100px;
+    width: 1100px;
+    margin: 0px auto; 
+}
+
+.organizerTitle {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0px;
+}
+
+.personDescription{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+.discriptionText {
+    line-height: 25px;
+}
+
+.profilePic {
+    border-radius: 60%;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personSet {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid grey;
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
