@@ -6,49 +6,50 @@
     <title>WHO</title>
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>
     <script
       src="https://kit.fontawesome.com/0121e95e8d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="header.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <div class="headerIn">
-            <div class="logo">
-                <a href="home.html"><img src="image/logo.png"></a>
-            </div>
-            <ul class="navBar">
-                <li class="navMenu"><a class="navLink" href="home.html">Home</a> </li>
-                <li class="navMenu"><a class="navLink" href="organizer.html">Organizer</a>
-                    <ul class="subMenu1">
-                        <li class="orgaMenu"><a class="orgaLink">교수</a></li>
-                        <li class="orgaMenu"><a class="orgaLink">역대회장/부회장</a></li>
-                        <li class="orgaMenu"><a class="orgaLink">제작자</a></li>
-                    </ul>
-                </li>
-                <li class="navMenu"><a class="navLink" href="hackathon.html">Hackerton</a>
-                    <ul class="subMenu2">
-                        <li class="orgaMenu"><a class="orgaLink">해커톤이란?</a></li>
-                        <li class="orgaMenu"><a class="orgaLink">참가자모집</a></li>
-                        <li class="orgaMenu"><a class="orgaLink">스태프모집</a></li>
-                        <li class="orgaMenu"><a class="orgaLink">예시작품</a></li>
-                    </ul>
-                </li>
-                <li class="navMenu"><a class="navLink" href="contact.html">Contact</a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="navbarLogo">
+            <i class="fas fa-infinity"></i>
+            <a class="navLink" href="home.html">WHO</a>
         </div>
-    </header>
+        <ul class="navbarMenu">
+            <li><a class="navLink" href="home.html">Home</a> </li>
+            <li><a class="navLink" href="organizer.html">Organizer</a>
+            </li>
+            <li><a class="navLink" href="hackathon.html">Hackathon</a>
+                <ul class="subMenu">
+                    <li><a href="hackathon.html">Hackathon?</a></li>
+                    <li><a href="hackathon.html">Recruitment</a></li>
+                    <li><a href="hackathon.html">Examples</a></li>
+                </ul>
+            </li>
+            <li><a class="navLink" href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="navbarIcon">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>           
+        </ul>
+        <a href="#" class="navbarBtn"><i class="fas fa-bars"></i></a>
+    </nav>
     <main class="organizer">
         <div class="organizerTitle">Organizer</div>
         <div class="professor">
             <div class="personDescription">담당 교수님</div>
             <div class="person">
                 <img class="profilePic" src="image/PHC.png">
-                <div class="discription">
-                    <div class="discriptionText"><i class="fas fa-check"></i> 전공: 운영체제 / 가상화 시스템</div>
-                    <div class="discriptionText"><i class="fas fa-check"></i> 이메일: hyunchan.park (at) jbnu.ac.kr</div>
-                    <div class="discriptionText"><i class="fas fa-check"></i> 연구실: 운영체제 연구실</div>
-                </div>
+                <ul class="discription">
+                    <li class="discriptionText"><i class="fas fa-check"></i> 이름: 박현찬</li>
+                    <li class="discriptionText"><i class="fas fa-check"></i> 전공: 운영체제 / 가상화 시스템</li>
+                    <li class="discriptionText"><i class="fas fa-check"></i> 이메일: hyunchan.park@jbnu.ac.kr</li>
+                    <li class="discriptionText"><i class="fas fa-check"></i> 연구실: 운영체제 연구실</li>
+                </ul>
             </div>
         </div>
         <div>
@@ -69,15 +70,15 @@
                 </div>
             </div>
             <div class="personSet">
-                <div class="year">2020년</div>
+                <div class="year">2019년</div>
                 <div class="person">
-                    <img class="profilePic" src="image/profilePic.jpg">
+                    <img class="profilePic" src="image/LSM.jpg">
                     <div class="discription">
                         <div>회장: 이소미</div>
                     </div>
                 </div>
                 <div class="person"">
-                    <img class="profilePic" src="image/profilePic.jpg">
+                    <img class="profilePic" src="image/PHJ.jpg">
                     <div class="discription">
                         <div>부회장: 박효준</div>
                     </div>
@@ -86,13 +87,13 @@
             <div class="personSet">
                 <div class="year">2020년</div>
                 <div class="person">
-                    <img class="profilePic" src="image/profilePic.jpg">
+                    <img class="profilePic" src="image/KKH.jpg">
                     <div class="discription">
                         <div>회장: 김경훈</div>
                     </div>
                 </div>
                 <div class="person"">
-                    <img class="profilePic" src="image/profilePic.jpg">
+                    <img class="profilePic" src="image/LSM.jpg">
                     <div class="discription">
                         <div>부회장: 이소미</div>
                     </div>
@@ -103,19 +104,19 @@
             <div class="personDescription">제작자</div>
             <div class="personSet">
                 <div class="person">
-                    <img class="profilePic" src="image/profilePic.jpg">
+                    <img class="profilePic" src="image/KEJ.jpg">
                     <div class="discription">
                         <div>김은진</div>
                     </div>
                 </div>
                 <div class="person">
-                    <img class="profilePic" src="image/profilePic.jpg">
+                    <img class="profilePic" src="image/LYL.jpg">
                     <div class="discription">
                         <div>이유리</div>
                     </div>
                 </div>
                 <div class="person">
-                    <img class="profilePic" src="image/profilePic.jpg">
+                    <img class="profilePic" src="image/KKH.jpg">
                     <div class="discription">
                         <div>김경훈</div>
                     </div>

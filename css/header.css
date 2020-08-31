@@ -1,52 +1,115 @@
-.header {
-    width: 100%;
-    position: fixed;
-    background-color: white;
-    border-bottom: 1px solid grey;
-}
-
-.headerIn {
-    width: 1100px;
+.navbar {
+    font-family: 'Righteous', cursive;
+    background-color: grey;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navBar {
-    list-style-type: none;
+    padding: 20px 18px;
+    position: fixed;
     width: 100%;
+}
+
+.navbarLogo {
+    font-size: 24px;
+    color: white;
     display: flex;
-    justify-content: space-evenly;
 }
 
-.navMenu:hover .subMenu1 {
-    opacity: 1;
-    visibility: visible;
-}
-.navMenu:hover .subMenu2 {
-    opacity: 1;
-    visibility: visible;
+.navbarLogo i {
+    color: wheat;
+    padding-right: 5px;
 }
 
+.navLink {
+    text-decoration: none;
+    color: white;
+}
 
-.subMenu1 {
+.navbarMenu {
+    display: flex;
+    list-style: none;
+}
+
+.navbarMenu li {
+    padding: 10px 20px;
+}
+
+.navbarMenu li:hover {
+    background-color: wheat;
+    border-radius: 4px;
+}
+
+.navbarMenu li:hover .subMenu {
+    display: flex;
     position: absolute;
-    margin: 10px;
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
-    opacity: 0;
-    visibility: hidden;
+    top: 45px;
+    font-size: 15px;
+    color: wheat;
 }
-.subMenu2 {
-    position: absolute;
-    margin: 10px;
-    width: 400px;
+
+.navbarIcon {
+    list-style: none;
+    color: white;
     display: flex;
-    justify-content: space-between;
-    opacity: 0;
-    visibility: hidden;
+}
+
+.navbarIcon li {
+    padding: 8px 12px;
+}
+
+.subMenu {
+    display: none;
+}
+
+.subMenu li:hover {
+    background-color: unset;
+    text-decoration: none;
+}
+
+.navbarBtn {
+    position: absolute;
+    right: 32px;
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbarMenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .navbarMenu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbarIcon {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbarBtn {
+        display: block;
+    }
+
+    .navbarMenu.active,
+    .navbarIcon.active {
+        display: flex;
+    }
+
+    .subMenu li {
+        display: none;
+    }
 }
